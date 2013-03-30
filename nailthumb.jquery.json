@@ -1,0 +1,38 @@
+{
+    "name": "nailthumb",
+    "title": "jQuery NailThumb",
+    "description": "Never resize a thumbnail again. One line of code for creating thumbnails from high-res images, no distortion. Decide thumbnail dimensions directly from CSS. Experience how useful it is in dynamic web applications, where you can face any shape or size.",
+    "keywords": [
+        "thumbnail",
+        "gallery",
+        "images"
+    ],
+    "version": "1.1.0",
+    "author": {
+        "name": "Garralab",
+        "url": "http://www.garralab.com"
+    },
+    "maintainers": [
+        {
+            "name": "Sasha Garravich",
+            "email": "garravich@gmail.com"
+        }, {
+            "name": "Garralab",
+            "email": "garralab@gmail.com",
+            "url": "http://www.garralab.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "GPL-3.0",
+            "url": "https://github.com/garralab/NailThumb/blob/master/license.txt"
+        }
+    ],
+    "bugs": "https://sourceforge.net/p/nailthumb/tickets/",
+    "homepage": "http://www.garralab.com/nailthumb.php",
+    "docs": "http://www.garralab.com/nailthumb.php",
+    "download": "http://www.garralab.com/nailthumb-downloads.php",
+    "dependencies": {
+        "jquery": ">=1.4"
+    }
+}
