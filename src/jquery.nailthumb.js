@@ -1,4 +1,4 @@
-/*	jQuery NailThumb Plugin - any image to any thumbnail
+/*  jQuery NailThumb Plugin - any image to any thumbnail
  *  Examples and documentation at: http://www.garralab.com/nailthumb.php
  *  Copyright (C) 2012  garralab@gmail.com
  *
@@ -39,14 +39,20 @@
 
         if (options.preload || image.data('nailthumb.replaceto')) {
             debug('wait on load');
-            image.one('load',function() {
+            var imgloaded = function() {
                 debugObject('before check',image);
                 if(!image.data('nailthumb.working') && !image.data('nailthumb.replacing')) {
                     image.data('nailthumb.working',true);
                     debugObject('inside check',image);
                     doThumb(image,container,options);
                 }
-            });
+            };
+            if(image.prop('complete')) {
+                imgloaded();
+            } else {
+                image.one('load',imgloaded);
+            }
+            
             var src = image.attr('src');
             image.attr('src',null).attr('src',src);
         } else {
